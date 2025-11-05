@@ -1,0 +1,17 @@
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const product = document.getElementById('product').value;
+    const quantity = document.getElementById('quantity').value;
+    
+    // For demo: Alert submission. Replace with real backend (e.g., fetch to API).
+    alert(`Order submitted!\nName: ${name}\nEmail: ${email}\nProduct: ${product}\nQuantity: ${quantity}`);
+    
+    // Example: Send to Formspree or similar.
+    // fetch('https://formspree.io/f/your-form-id', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ name, email, product, quantity })
+    // });
+});
